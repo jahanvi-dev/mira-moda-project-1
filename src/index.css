@@ -1,0 +1,1044 @@
+@font-face {
+  font-family: Cailyne;
+  src: url(/src/assets/Cailyne-51Edv.otf);
+  font-family: Kostania;
+  src: url(/src/assets/Kostania-Bold.ttf);
+  font-family: marketDeco;
+  src: url(/src/assets/Market_Deco.ttf);
+  font-family: silk-serif;
+  src: url(/src/assets/silkserif-lightitalic-webfont.woff);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+/* Styling Loader of the website */
+.loader{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 9;
+  color: black;
+}
+
+.loader p{
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-family: 'Cailyne';
+}
+
+/* All content of the homepage falls under this category */
+main{
+  position: relative;
+  z-index: 999;
+}
+
+
+/* Styling navbar  */
+nav{
+  height: 8vh;
+  width: 100%;
+  background-color: white;
+  /* border: 0.1px solid brown; */
+  display: flex;
+  position: relative;
+  z-index: 999;
+  font-family: 'Kostania';
+
+}
+
+.navBox1{
+  height: 100%;
+  width: 30%;
+  padding: 1vw 0 0 1.2vw;
+  font-size: 1.7vw;
+  z-index: 999;
+  /* background-color: rgb(150, 109, 188); */
+}
+
+.navBox2{
+  height: 100%;
+  width: 20%;
+  padding: 1vw 0 0 1vw;
+  font-size: 1.7vw;
+  color: rgb(250, 48, 48);
+  /* background-color: rgb(162, 138, 186); */
+}
+
+.navBox3{
+  height: 100%;
+  width: 50%;
+  padding: 1vw 1.2vw 0 6vw;
+  font-size: 1.7vw;
+  /* background-color: rgb(108, 81, 135); */
+}
+
+.navLinks{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.navLinks a{
+  height: 4.6vh;
+  width: fit-content;
+  color: rgb(68, 170, 217);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3vw;
+  /* background-color: olivedrab; */
+  border: 0.001px solid rgb(68, 170, 217); 
+  padding: 0.2vw 1vw 0.5vw 1vw;
+  border-radius: 25px;
+}
+
+.navLinks a:hover{
+  border: none;
+  
+
+}
+
+#userCartValue{
+  font-family: 'Poppins';
+  font-size: 1vw;
+}
+
+
+.page1{
+  height: 120vh;
+  width: 100%;
+  z-index: 999;
+  /* background-color: rgb(116, 159, 161); */
+}
+
+
+.heroSection{
+  height: 100%;
+  width: 100%;
+  /* background-color: palevioletred; */
+  display: flex;
+  gap: 0.1%;
+  position: relative;
+  padding: 5% 0 0 0;
+}
+
+
+.heroImg1{
+  height: 100%;
+  width: 50%;
+  /* background-color: burlywood; */
+  overflow: hidden;
+}
+
+.heroImg1 img{
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+  overflow: hidden;
+  margin-left: 30%;
+  transition: filter 0.4s ease;
+
+}
+
+
+
+.heroImg2{
+  height: 100%;
+  width: 50%;
+  /* background-color: burlywood; */
+  overflow: hidden;
+}
+
+.heroImg2 img{
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: filter 0.4s ease;
+
+}
+
+
+.heroSection img:hover {
+  filter: blur(1px);
+  z-index: 999;
+}
+
+/* Styling page 2 */
+.page2{
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  /* background-color: azure; */
+  
+
+}
+
+.page2 h1{
+  margin-top: 10vw;
+  font-family: 'Kostania';
+  font-size: 3.2vw;
+  text-align: center;
+  color: black;
+  height: 8vh;
+  /* background-color: yellow; */
+}
+
+#page2Para{
+  /* background-color: blueviolet; */
+  height: 14vh;
+  line-height: 1.6vw;
+  width: 90%;
+  margin: 4% 0 0 5%;
+  font-size: 1.2vw;
+  font-family: 'Raleway';
+}
+
+.handbag1{
+  margin-top: 7vw;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  margin-bottom: 12vw;
+  /* background-color: palegreen; */
+}
+
+.bagImg1{
+  height: 100%;
+  width: 55%;
+  /* background-color: rgba(153, 205, 50, 0.545); */
+  display: flex;
+  gap: 2%;
+  padding-left: 2%;
+}
+
+
+.bagImg1 #smallImg{
+  height: 55%;
+  margin-top: 24%;
+  width: 25%;
+  object-fit: cover;
+  border-radius: 5%;
+
+  
+}
+
+
+.bagImg1 #mainImg{
+  height: 90%;
+  width: 40%;
+  object-fit: cover;
+  margin-top: 5%;
+  border-radius: 5%;
+
+}
+
+.handbag1 img:hover{
+  filter: brightness(70%);
+  transition: filter 0.3s;
+
+}
+
+
+
+.bagDetails{
+  /* background-color: beige; */
+  height: 100%;
+  width: 42.5%;
+  font-family: 'Poppins';
+  padding-left: 2.5%;
+  padding-top: 1.6%;
+}
+
+
+.bagDetails h2{
+  /* background-color: pink; */
+  height: 6vh;
+  font-size: 1.6vw;
+  font-weight: 500;
+  padding-top: 0.4vw;
+}
+
+.bagDetails h4{
+  /* background-color: rgb(223, 69, 94); */
+  font-size: 1.4vw;
+  font-weight: 400;
+  padding-top: 0.2vw;
+  font-family: 'Poppins';
+
+}
+
+#bagDescription{
+  /* background-color: yellow; */
+  height: 25vh;
+  font-family: 'Poppins';
+  margin-top: 1vw;
+  font-size: 1vw;
+  width: 90%;
+  font-weight: 300;
+
+}
+
+
+.handbag1 .cartButton{
+    margin-top: 4%;
+
+}
+
+.handbag1 .cart{
+  font-size: 1vw;
+}
+
+.countButton{
+  display: flex;
+  height: 5vh;
+  /* background-color: orange; */
+  width: 80%;
+  margin-top: 3%;
+
+}
+
+.add{
+  width: 35%;
+  font-size: 1.6vw;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.848);
+  color:  white;
+
+}
+
+.add:hover{
+  color: black;
+  background-color: white;
+  border: 0.1px solid lightgray;
+}
+
+.sub{
+  width: 35%;
+  font-size: 1.6vw;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.848);
+
+}
+
+.sub:hover{
+  color: black;
+  background-color: white;
+  border: 0.1px solid lightgray;
+}
+
+
+.numOfProducts{
+  width: 30%;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.3vw;
+  padding-top: 0.2vw;
+  border-top: 0.1px solid lightgray;
+  border-bottom: 0.1px solid lightgray;
+  /* border: 0.1px solid grey; */
+
+}
+
+.cart{
+  height: 5vh;
+  /* background-color: orange; */
+  width: 80%;
+  margin-top: 2%;
+  font-size: 1.2vw;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.848);
+
+}
+
+.cart:hover{
+  color: black;
+  background-color: white;
+  border: 0.1px solid lightgray;
+
+}
+
+
+/* Page 3 styling */
+.page3{
+  height: 430vh;
+  width: 100%;
+  margin-top: 12%;
+  position: relative;
+  z-index: 999;
+  /* background-color: rgba(165, 42, 42, 0.385); */
+}
+
+.page3 h1{
+  font-family: 'Kostania';
+  text-align: center;
+  font-size: 2.5vw;
+  line-height: 3.4vw;
+  padding-top: 2vw;
+}
+
+.page3 #shop{
+  /* background-color: rgb(112, 164, 216); */
+  font-size: 4.3vw;
+  letter-spacing: 0.2vw;
+}
+
+
+.mmContainer{
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  margin-top: 4%;
+  /* background-color: rgb(164, 140, 187); */
+  display: grid;
+  gap: 2%;
+  z-index: 999;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.productBox{
+  margin: 12% 2% 7% 9%;
+  height: 80vh;
+  width: 80%;
+  position: relative;
+
+
+  /* background-color: cadetblue; */
+  /* border: 0.01px solid rgba(18, 17, 17, 0.685); */
+
+}
+
+
+.productBox img{
+  height: 55vh;
+  width: 85%;
+  margin-left: 7%;
+  object-fit: cover;
+  background-color: aquamarine;
+}
+
+.productBox img:hover{
+  filter: brightness(70%);
+  transition: filter 0.3s;
+
+}
+
+.productBox h2{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1.2vw;
+  text-align: center;
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.productBox h5{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1.2vw;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.productBox .countButton{
+  padding-left: 8%;
+  padding-right: 8%;
+  width: 100%;
+  position: relative;
+  margin-top: 3%;
+}
+
+.productBox .add{
+  background-color: white;
+  border: 0.1px solid lightgrey;
+  color: black;
+  position: relative;
+
+}
+
+.productBox .add:hover{
+  background-color: rgba(0, 0, 0, 0.848);
+  color: white;
+}
+
+.productBox .sub{
+  background-color: white;
+  color: black;
+  position: relative;
+  border: 0.1px solid lightgrey;
+
+}
+
+.productBox .sub:hover{
+  background-color: rgba(0, 0, 0, 0.848);
+  color: white;
+}
+
+.productBox .cartButton{
+  padding-left: 8%;
+  position: relative;
+  width: 113%;
+  margin-top: 2%;
+
+}
+
+.page4{
+  height: 125vh;
+  width: 100%;
+  /* background-color: pink; */
+  margin-top: 6%;
+  z-index: 999;
+  position: relative;
+}
+
+.whyContainer{
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  position: relative;
+  /* background-color: rgba(94, 128, 123, 0.297); */
+}
+
+.whyImg{
+  height: 55vh;
+  width: 100%;
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.464); */
+  
+}
+
+.whyImg img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+
+}
+
+
+
+.whyImg h1{
+  position: absolute;
+  top: 0;
+  font-family: 'Kostania';
+  /* font-weight: 100; */
+  font-size: 4vw;
+  height: 10vh;
+  color: white;
+  width: 100%;
+  text-align: center;
+  line-height: 4.2vw;
+  padding-top: 3%;
+  transform: scaleY(1.4);
+  letter-spacing: 10px;
+  /* background-color: rgba(255, 255, 0, 0.182); */
+}
+
+.whyImg h2{
+  position: absolute;
+  top: 20%;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  color: white;
+  /* background-color: rgb(86, 53, 9); */
+  font-family: 'Raleway';
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  margin-top: 2.5%;
+
+}
+
+
+.whyVideo {
+  height: 61vh;
+  position: absolute;
+  top: 44%;
+  left: 23%;
+  width: 55%;
+  /* border: 0.1px solid rgb(11, 11, 11); */
+  /* background-color: pink; */
+  z-index: 99;
+}
+
+
+.whyVideo video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.whyContainer p{
+  position: absolute;
+  top: 82%;
+  padding: 1% 3% 0 3%;
+  font-size: 1.1vw;
+  font-weight: 400;
+  line-height: 1.7vw;
+  font-family: 'Raleway';
+}
+
+
+/* Styling cart page */
+#cartMain{
+  height: fit-content;
+  width: 100%;
+  /* background-color: peachpuff; */
+  padding-bottom: 2%;
+  z-index: 999;
+
+}
+
+.cartProductContainer{
+  height: fit-content;
+  width: 80%;
+  margin-top: 0.4%;
+  /* background-color: rgb(85, 85, 172); */
+  z-index: 999;
+
+}
+
+
+.cartBox{
+  height: 40vh;
+  width: 100%;
+  margin-top: 5%;
+  /* background-color: orchid; */
+}
+
+
+.cartPageHeading{
+  font-family: 'kostania';
+  margin-top: 7%;
+  width: fit-content;
+  margin-left: 2%;
+  font-size: 3.2vw;
+  color: rgba(0, 0, 0, 0.71);
+  /* background-color: aquamarine; */
+  line-height: 2vw;
+  border-bottom: 0.1px solid black;
+}
+
+.cartProduct{
+  height: 40vh;
+  width: 90%;
+  /* padding-top: 2%; */
+  /* background-color: rgba(244, 247, 248, 0.865); */
+  padding-left: 3%;
+  display: flex;
+  margin-bottom: 4%;
+  gap: 2%
+}
+
+.cartProductImg{
+  height: 100%;
+  width: 25%;
+  /* background-color: rgba(255, 68, 0, 0.288); */
+}
+
+.cartProductImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.cartProductName{
+  height: 100%;
+  width: 24%;
+  /* background-color: aqua; */
+  font-size: 1.2vw;
+  text-align: center;
+  padding-top: 11.5%;
+  font-family: 'Raleway';
+  font-weight: 500;
+}
+
+.cartProductPrice{
+  width: 13%;
+  font-family: 'Poppins';
+  padding-top: 11.5%;
+  text-align: center;
+
+
+
+}
+#cartProductPrice{
+  /* background-color: blanchedalmond; */
+ 
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+.cartProductContainer .countButton{
+  width: 22%;
+  margin-top: 11.5%;
+  /* background-color: pink; */
+  
+}
+
+.cartProductContainer .add{
+  font-size: 1.2vw;
+  height: 4vh;
+  width: 4vw;
+}
+.cartProductContainer .sub{
+  font-size: 1.2vw;
+  height: 4vh;
+  width: 4vw;
+}
+
+.cartProductContainer .numOfProducts{
+  font-size: 1.2vw;
+  padding-top: 0.2vw;
+  font-size: 1vw;
+  color: black;
+  height: 4vh;
+  width: 4vw;
+}
+
+.removeButton{
+  /* background-color: rgb(8, 67, 67); */
+  width: 8%;
+  padding-top: 2%;
+  padding-left: 2.3%;
+
+}
+.remove{
+  height: 4.8vh;
+  width: 2.5vw;
+  border-radius: 50%;
+  border: none;
+  /* border: 0.1px solid rgba(250, 48, 48, 0.936); */
+  color: black;
+  font-size: 1vw;
+  align-self: center;
+  background-color: white;
+  font-weight: 200;
+  font-family: 'Poppins';
+}
+
+.remove:hover{
+  background-color: rgba(250, 48, 48, 0.936);
+  font-weight: 300;
+  color: white;
+
+}
+
+
+.cartTotal{
+  height: 62vh;
+  width: 25%;
+  border: 0.1px solid black;
+  margin-left: 72%;
+  margin-top: 10%;
+  padding: 1.5%;
+  z-index: 999;
+  /* background-color: yellow; */
+}
+
+.cartTotal h4{
+  height: 6vh;
+  width: 100%;
+  /* background-color: orange; */
+  font-family: 'Raleway';
+  font-size: 1.3vw;
+  margin-top: 4%;
+  font-weight: 600;
+}
+
+.totalCost{
+  height: 7vh;
+  width: 100%;
+  margin-bottom: 8%;
+  display: flex;
+  /* background-color: palegreen; */
+}
+
+.cartTotal h5{
+  width: 60%;
+  font-family: 'Raleway';
+  /* background-color: yellow; */
+  font-size: 1.2vw;
+  font-weight: 600;
+  padding-top: 4%;
+}
+
+.subTotal{
+  font-size: 1.2vw;
+  font-family: 'Poppins';
+  padding-top: 3%;
+  padding-left: 20%;
+
+}
+
+.totalAmount{
+  font-size: 1.2vw;
+  font-family: 'Poppins';
+  padding-top: 3%;
+  padding-left: 20%;
+  border-bottom: 0.1px solid rgba(98, 98, 99, 0.377);
+
+}
+
+
+.tax{
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  margin-bottom: 8%;
+  /* background-color: rgb(58, 154, 58); */
+}
+
+.tax p{
+  font-size: 1.2vw;
+  font-family: 'Poppins';
+  padding-top: 4%;
+  padding-left: 20%;
+}
+
+
+.finalCost{
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10%;
+  /* background-color: rgb(58, 154, 58); */
+}
+
+.cartTotal b{
+  font-family: 'Raleway';
+  font-size: 1.2vw;
+  font-weight: 600;
+
+}
+
+.cartPara{
+  margin-top: 4%;
+  font-size: 1vw;
+  font-family: 'Raleway';
+}
+
+.cartQuantityCount{
+  height: 4vh;
+  width: 4vw;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1vw;
+  padding-top: 0.2vw;
+  border-top: 0.1px solid lightgray;
+  border-bottom: 0.1px solid lightgray;
+  color: black;
+
+}
+
+
+
+/* Page 5 styling */
+.page5{
+  height: 100vh;
+  width: 100%;
+  margin-top: 5%;
+  z-index: 999;
+  /* background-color: orange; */
+}
+
+.page5Container{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(143, 121, 125); */
+  display: flex;
+}
+
+.page5Img{
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  margin-left: 0.2%;
+
+}
+
+
+.page5Img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease;
+
+}
+
+
+.page5Img img:hover{
+  filter: sepia(100%);
+
+}
+
+
+.page5Text{
+  padding-top: 8%;
+  height: 100%;
+  width: 50%;
+}
+
+
+.page5Text h2{
+  height: 5vh;
+  width: 100%;
+  font-family: 'Cailyne';
+  font-size: 1.8vw;
+  font-weight: 500;  
+  margin-top: 7%;
+  text-align: center;
+  /* background-color: yellow; */
+  transform: scaleY(1.1);
+}
+
+
+.page5Text h1{
+  font-family: 'Cailyne';
+  font-weight: 900;
+  margin-top: 3.5%;
+  text-align: center;
+  font-size: 3.7vw;
+  color: rgb(241, 37, 37);
+  letter-spacing: 3px;
+  transform: scaleY(1.2);
+}
+
+.page5Text b{
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1.5%;
+  font-family: 'Raleway';
+  font-size: 1.1vw;
+  text-align: center;
+  letter-spacing: 0.4px;
+  width: 100%;
+}
+
+
+.page5Text p{
+  padding: 2% 10% 0 10%;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 1.1vw;
+  font-weight: 400;
+  margin-top: 8%;
+  letter-spacing: 0.1px;
+}
+
+
+footer{
+  height: 62vh;
+  margin-top: 10%;
+  width: 100%;
+  z-index: 999;
+  /* background-color: palegreen; */
+}
+
+
+
+.footerContainer{
+  height: 57vh;
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  /* background-color: beige; */
+  border-top: 0.1px solid rgba(179, 175, 175, 0.425);
+  border-bottom: 0.1px solid rgba(179, 175, 175, 0.425);
+
+}
+
+.footerBox1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  /* background-color: rgba(0, 0, 255, 0.395); */
+}
+
+.subBox{
+  height: 100%;
+  width: 25%;
+  /* background-color: orchid; */
+  padding: 0 2% 0 2%;
+  border-left: 0.1px solid rgba(179, 175, 175, 0.425);
+}
+
+.subBox h4{
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 1vw;
+  margin-bottom: 12%;
+
+}
+
+
+.subBox a{
+  display: block;
+  font-size: 1vw;
+  margin-top: 4%;
+  text-decoration: none;
+  font-family: 'Raleway';
+  color: black;
+}
+
+.subBox a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+.subBox input{
+  height: 6vh;
+  width: 95%;
+  padding-left: 6%;
+  padding-top: 1%;
+  font-size: 0.7vw;
+  border: 0.1px solid rgba(147, 147, 147, 0.686);
+
+
+}
+
+
+.subBox p{
+  margin-top: 10%;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+
+}
+
+#copy{
+  text-align: center;
+  margin-top: 0.6%;
+  /* background-color: palevioletred; */
+  font-size: 1vw;
+  font-family: 'Raleway';
+}
+

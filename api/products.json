@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "productImg": "src/assets/productImg7(b).jpg",
+        "productName": "MINI CITY BAG",
+        "productPrice": 145.99
+    },
+    {
+        "id": 2,
+        "productImg": "src/assets/productImg8(a).jpg",
+        "productName": "CONTRAST SHOPPPER BAG",
+        "productPrice": 195.99
+    },
+    {
+        "id": 3,
+        "productImg": "src/assets/productImg1(a).jpg",
+        "productName": "JERSEY SWEATESHIRT WITH HOOD",
+        "productPrice": 44.99
+    },
+    {
+        "id": 4,
+        "productImg": "src/assets/productImg4(a).jpg",
+        "productName": "OPEN BACK MIDI DRESS",
+        "productPrice": 51.99
+    },
+    {
+        "id": 5,
+        "productImg": "src/assets/productImg9(d).jpg",
+        "productName": "CONTRAST KNIT HALTER NECK TOP",
+        "productPrice": 14.99
+    },
+    {
+        "id": 6,
+        "productImg": "src/assets/productImg3(c).jpg",
+        "productName": "ZW COLLECTION DRESS",
+        "productPrice": 48.99
+    },
+    {
+        "id": 7,
+        "productImg": "src/assets/productImg5(a).jpg",
+        "productName": "POPLIN SHIRT WITH CONTRAST",
+        "productPrice": 11.99
+    },
+    {
+        "id": 8,
+        "productImg": "src/assets/productImg6(a).jpg",
+        "productName": "CROPPED BLAZER",
+        "productPrice": 62.99
+    },
+    {
+        "id": 9,
+        "productImg": "src/assets/productImg10(a).jpg",
+        "productName": "PRINTED DRAPED TULLE DRESS",
+        "productPrice": 21.99
+    },
+    {
+        "id": 10,
+        "productImg": "src/assets/productImg2(c).jpg",
+        "productName": "STRIPED KNIT MIDI DRESS",
+        "productPrice": 24.99
+    }
+]
