@@ -1,5 +1,5 @@
 // Fetch products and handle cart
-fetch("/api/products.json")
+fetch("api/products.json")
     .then(response => response.json())
     .then(data => {
         let products = data;
