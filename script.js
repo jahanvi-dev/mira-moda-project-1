@@ -1,3 +1,6 @@
+// console.log('script connected')
+
+
 // // GSAP ANIMATION - 
 let tl = gsap.timeline();
 

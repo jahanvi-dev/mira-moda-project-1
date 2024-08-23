@@ -1,3 +1,6 @@
+// console.log('script connected')
+
+
 // Fetch products and handle cart
 fetch("api/products.json")
     .then(response => response.json())
