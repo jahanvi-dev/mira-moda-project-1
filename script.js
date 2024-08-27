@@ -1,4 +1,4 @@
-// console.log('script connected')
+//console.log('script connected')
 
 
 // // GSAP ANIMATION - 
@@ -136,6 +136,9 @@ let miraContainer = (productArray) => {
     // same as step 4, just this time it is add to cart button
     productCloning.querySelector('.cart').addEventListener('click', (event) => {
     addToCartButton(id);
+
+   
+
     });
 
     // to display all products, let's append them
@@ -168,6 +171,7 @@ let homeCountToggle = (event, id) => {
    // find out add or sub button is clicked, perform calc accordingly
    if(event.target.className === ('add')){
     quantity++;
+
    }
 
    if(event.target.className === ('sub')){
@@ -215,10 +219,14 @@ let updatedCartValue = (cartProducts) => {
     }
 
 }
+
+
+
 let addToCartButton = (id) => {
 
     // this is for local storage
     let productArray = getProductFromLocalStorage();
+
 
 
     // checking if product id already exits in local stoarge
@@ -235,6 +243,7 @@ let addToCartButton = (id) => {
     productCount = parseInt(currentCardClick.querySelector('.numOfProducts').getAttribute('countData')) || 0;
     // console.log(productCount);   // tells us the quantity of the product, here it changes because of the function declared above
 
+   
     // now, let's find the price of the product
     productPrice = currentCardClick.querySelector('#productPrice').innerText;
     //console.log(productPrice); // tells us the price of the product, here the price is not changing rn
@@ -246,8 +255,10 @@ let addToCartButton = (id) => {
     console.log(productCount, productPrice);   // here, the price is changing according to quantity & price is in number form
 
 
+    
     // now, let's store data in local storage
     // we'll have to create a function for that = getProductFromLocalStorage();
+
 
 
     if(productExist){
@@ -265,21 +276,26 @@ let addToCartButton = (id) => {
 
     localStorage.setItem('productDataFromLS', JSON.stringify(productArray));
 
-
-
-
-
+    
 
     // for showing updated cart value on nav
     updatedCartValue(productArray);
 
+    if(productCount !== 0){
+        let button_text = currentCardClick.querySelector('.cart');
+        button_text.textContent = "Item added to cart"
+    
+        //  reset the button text after a few seconds
+        setTimeout(() => {
+            button_text.textContent = "Add";
+        }, 2000);  // Change text back after 2 seconds
+    
+        return;
+    
+        }
+
+    
 }
-
-
-
-
-
-
 
 
 

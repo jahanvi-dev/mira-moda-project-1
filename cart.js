@@ -1,4 +1,4 @@
-// console.log('script connected')
+//console.log('script2 connected')
 
 
 // Fetch products and handle cart
@@ -173,7 +173,7 @@ function cartTotal() {
     let initialCount = 0;
 
     let finalCost = localCartProduct.reduce((accum, currentProduct) => {
-        let productPrice = parseInt(currentProduct.productPrice) || 0;
+        let productPrice = currentProduct.productPrice || 0;
         return accum + productPrice;
     }, initialCount);
 
